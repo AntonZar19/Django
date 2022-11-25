@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Materiales</title>
+	<link rel="icon" href="/static/img/Isotipo.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+	<script src="/static/js/jquery-3.2.1.js"></script>
+	<script src="/static/js/script.js"></script>
+	<link rel="stylesheet" href="/static/css/estilos.css">
+	<link href="/static/css/estilo-inicio.css" rel="stylesheet">
+	<link rel="stylesheet" href="/static/css/palfooter.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Combo&family=Lato:wght@300&family=Noto+Sans+Mono:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+  <!-- estos links son para el footer -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <!-- estos links son para el footer -->
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--Header con LOGO-->
+<div class="b-example-divider"></div>
+<header class="primerdiv p-3 ">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <a href="/inicio/">
+          <img class="imagen" src="/static/img/ccent.png" alt="CCENT" >
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/inicio/" class="nav-link text-white">Inicio</a></li>
+          <li><a href="/quienes_somos/" class="nav-link text-white">¿Quienes somos?</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cursos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/cursos/">Información</a></li>
+              <li><a class="dropdown-item" href="/av/">Audio y Video</a></li>
+              <li><a class="dropdown-item" href="/autom/">Automotriz</a></li>
+              <li><a class="dropdown-item" href="/EAD/">Electrónica Analógica y Digital</a></li>
+              <li><a class="dropdown-item" href="/pcylap/">PC y Laptops</a></li>
+              <li><a class="dropdown-item" href="/robotica/">Robótica</a></li>
+              
+            <!--<li><a class="dropdown-item" href="#">Something else here</a></li>-->
+            </ul>
+          <li><a href="/materiales/" class="nav-link px-2 text-white">Materiales</a></li>
+          <li><a href="/servicios/" class="nav-link px-2 text-white">Servicios</a></li>
+          <li>
+            <a class="nav-link px-2 text-white" href="/faq/">FAQ</a>
+          </li>
+        </ul>
+
+        {% comment %} BARRA DE BUSQUEDA {% endcomment %}
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+			<input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Search" value="" id="search" onchange="openPage()">
+			<script>
+			  function openPage() {
+				var x = document.getElementById("search").value;
+				if (x === "cursos") {
+					window.open("/cursos/");
+				}
+				if (x === "quienes somos") {
+					window.open("/quienes_somos/");
+				}
+			if (x === "faq") {
+			  window.open("/faq/");
+		  }
+		  if (x === "automotriz") {
+			  window.open("/autom/");
+		  }
+			  if (x === "audio y video") {
+				window.open("/av/");
+			}
+			if (x === "herramientas") {
+				window.open("/herramientas/");
+			}
+		if (x === "robotica") {
+		  window.open("/robotica/");
+	  }
+	  if (x === "pc y laptops") {
+		  window.open("/pcylap/");
+		  }
+		  if (x === "servicios") {
+			window.open("/servicios/");
+		}
+		 if (x === "electronica") {
+		  window.open("/EAD/");
+	  }
+	  if (x === "inicio") {
+		window.open("/inicio/");
+	}
+		}
+		  </script>
+		  </form>
+  
+
+        
+      </div>
+    </div>
+  </header>
+
+
+
+	<!-- ChatBot-->
+<a href=" https://wa.me/524431722172" class="btn-wsp" target="_blank">
+	<i class="fa fa-whatsapp icono"></i>
+  </a>
+
+
+
+	<div class="wrap">
+		<h1>Materiales</h1>
+		<div class="store-wrapper">
+			<div class="category_list">
+				<a href="#" class="category_item" category="all">Todo</a>
+				<a href="#" class="category_item" category="herramienta">Herramientas</a>
+				<a href="#" class="category_item" category="accesorios">Cables, Accesorios e Insumos</a>
+				<a href="#" class="category_item" category="robotica">Robotica</a>
+			</div>
+			<section class="products-list">
+				<div class="product-item" category="herramienta">
+					<img src="/static/img/Multimetro.jpg" alt="" >
+					<a href="#">Multimetro</a>
+				</div>
+				<div class="product-item" category="accesorios">
+					<img src="/static/img/kitherramientas.jpg" alt="" >
+					<a href="#">Kit de Herramientas</a>
+				</div>
+				<div class="product-item" category="robotica">
+					<img src="/static/img/ArduinoUno.jpg" alt="" >
+					<a href="#">Arduino Uno</a>
+				</div>
+				<div class="product-item" category="accesorios">
+					<img src="/static/img/cautin.jpg" alt="" >
+					<a href="#">Cautín tipo lapiz</a>
+				</div>
+				<div class="product-item" category="herramienta">
+					<img src="/static/img/Llave-de-impacto.jpg" alt="" >
+					<a href="#">Llave de impacto</a>
+				</div>
+				
+			</section>
+		</div>
+	</div>
+
+
+
+		<br>
+		<br>
+		<br>
+
+	<!-- Footer -->
+	<footer id="dk-footer" class="dk-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-4">
+					<div class="dk-footer-box-info">
+						<a href="/inicio/" class="footer-logo">
+							<img src="/static/img/ccent.png" alt="footer_logo" class="img-fluid">
+						</a>
+						<p class="textoshd footer-info-text">
+						   Formando profesionales desde 2012.
+						</p>
+						<div class="footer-social-link">
+							<h3 class="tituloshd">Siguenos</h3>
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/ccent.escuelaelectronica">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="https://www.instagram.com/ccent_morelia_nikola_tesla/">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- End Social link -->
+					</div>
+					<!-- End Footer info -->
+					<div class="footer-awarad">
+						<!-- <img src="images/icon/best.png" alt=""> -->
+						<img src="/static/img/" alt="">
+						<p class="tituloshd">Centro de Capacitacion Electronica Nikola Tesla</p>
+					</div>
+				</div>
+				<!-- End Col -->
+				<div class="col-md-12 col-lg-8">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="contact-us">
+								<div class="contact-icon">
+									<i class="fa fa-map-o" aria-hidden="true"></i>
+								</div>
+								<!-- End contact Icon -->
+								<div class="contact-info">
+									<h3 class="tituloshd">Morelia Michoacan</h3>
+									<p class="textoshd">C. Juan Guillermo Villasana 131, Jardines de Guadalupe, 58140</p>
+								</div>
+								<!-- End Contact Info -->
+							</div>
+							<!-- End Contact Us -->
+						</div>
+						<!-- End Col -->
+						<div class="col-md-6">
+							<div class="contact-us contact-us-last">
+								<div class="contact-icon">
+									<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+								</div>
+								<!-- End contact Icon -->
+								<div class="contact-info">
+									<h3 class="tituloshd">443 172 2172</h3>
+									<p class="textoshd">Contactanos</p>
+								</div>
+								<!-- End Contact Info -->
+							</div>
+							<!-- End Contact Us -->
+						</div>
+						<!-- End Col -->
+					</div>
+					<!-- End Contact Row -->
+					<div class="row">
+						<div class="col-md-12 col-lg-6">
+							<div class="footer-widget footer-left-widget">
+								<div class="section-heading">
+									<h3>CCENT</h3>
+									<span class="animate-border border-black"></span>
+								</div>
+								<ul>
+									<li>
+										<a href="/inicio/">Inicio</a>
+									</li>
+									<li>
+										<a href="/cursos/">Cursos</a>
+									</li>
+									<li>
+										<a href="/servicios/">Servicios</a>
+									</li>
+									
+								</ul>
+								<ul>
+									<li>
+										<a href="/materiales/">Materiales</a>
+									</li>
+									<li>
+										<a href="/faq/">FAQ</a>
+									</li>
+									<li>
+										<a href="/quienes_somos/">¿Quiénes somos?</a>
+									</li>
+								</ul>
+							</div>
+							<!-- End Footer Widget -->
+						</div>
+						<!-- End col -->
+						<div class="col-md-12 col-lg-6">
+							<div class="footer-widget">
+								<div class="section-heading">
+									<h3>Conocenos</h3>
+									<span class="animate-border border-black"></span>
+								</div>
+								<p class="textoshd">
+								  Somos un centro dedicado a la capacitación técnica para el trabajo en diversas áreas de la electrónica. 
+								  Así mismo, brindamos servicios de consultoría y solución de problemas basándonos en la electrónica.</p>
+								
+								<!-- End form -->
+							</div>
+							<!-- End footer widget -->
+						</div>
+						<!-- End Col -->
+					</div>
+					<!-- End Row -->
+				</div>
+				<!-- End Col -->
+			</div>
+			<!-- End Widget Row -->
+		</div>
+		<!-- End Contact Container -->
+  
+  
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div>
+						<span>Copyright © 2022, All Right Reserved</span>
+					</div>
+					<!-- End Col -->
+					<div class="col-md-6">
+						<div class="copyright-menu">
+							
+						</div>
+					</div>
+					<!-- End col -->
+				</div>
+				<!-- End Row -->
+			</div>
+			<!-- End Copyright Container -->
+		</div>
+		<!-- End Copyright -->
+  </footer>
+	  <!-- Footer -->
+</body>
+</html>

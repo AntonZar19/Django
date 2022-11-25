@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="icon" href="/static/img/Isotipo.png">
+
+    <link href="/static/css/estilo-inicio.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Combo&family=Lato:wght@300&family=Noto+Sans+Mono:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- estos links son para el footer -->
+  <link rel="stylesheet" href="/static/css/palfooter.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <!-- estos links son para el footer -->
+
+  <!-- link tipografia titulos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <!-- link tipografia titulos -->
+  
+  <!-- link tipografia demas textos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <!-- link tipografia demas textos -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FAQ ACCORDION </title>
+    <!-- fontawasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- css -->
+   <link rel="stylesheet" href="estilos/estilo-inicio.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--Header con LOGO-->
+<div class="b-example-divider"></div>
+<header class="primerdiv p-3 ">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <a href="/inicio/">
+          <img class="imagen" src="/static/img/ccent.png" alt="CCENT" >
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/inicio/" class="nav-link text-white">Inicio</a></li>
+          <li><a href="/quienes_somos/" class="nav-link text-white">¿Quienes somos?</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cursos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/cursos/">Información</a></li>
+              <li><a class="dropdown-item" href="/av/">Audio y Video</a></li>
+              <li><a class="dropdown-item" href="/autom/">Automotriz</a></li>
+              <li><a class="dropdown-item" href="/EAD/">Electrónica Analógica y Digital</a></li>
+              <li><a class="dropdown-item" href="/pcylap/">PC y Laptops</a></li>
+              <li><a class="dropdown-item" href="/robotica/">Robótica</a></li>
+              
+            <!--<li><a class="dropdown-item" href="#">Something else here</a></li>-->
+            </ul>
+          <li><a href="/materiales/" class="nav-link px-2 text-white">Materiales</a></li>
+          <li><a href="/servicios/" class="nav-link px-2 text-white">Servicios</a></li>
+          <li>
+            <a class="nav-link px-2 text-white" href="/faq/">FAQ</a>
+          </li>
+        </ul>
+
+       {% comment %} BARRA DE BUSQUEDA {% endcomment %}  
+      </div>
+    </div>
+  </header>
+<!-- ChatBot-->
+<a href=" https://wa.me/524431722172" class="btn-wsp" target="_blank">
+  <i class="fa fa-whatsapp icono"></i>
+</a>
+{% comment %}  Aqui inicia el FAQ{% endcomment %}
+{% comment %} NO LE METAN MANO O LOS MATO Atte: El programador{% endcomment %}
+        <section class="section">
+            <div class="columns">
+                <div class="column is-2">
+                    <aside class="menu">
+                        <p class="menu-label">Preguntas</p>
+
+                        <ul class="menu-list">
+                            {% for doc in documents %}
+                                <li>
+                                    <a href="{% url 'editor' %}?docid={{ doc.id }}">{{ doc.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="column is-10">
+                    <form method="post" action="{% url 'editor' %}">
+                        {% csrf_token %}
+
+                        <input type="hidden" name="docid" value="{{ docid }}">
+
+                        <div class="field">
+                            <label class="label">
+                                Pregunta
+
+                                {% if document %}
+                                    <span class="has-text-grey-light">
+                                        Creado el: {{ document.created_at|date:"d/m Y" }} / 
+                                       Modificado el: {{ document.modified_at|date:"d/m Y" }}
+                                    </span>
+                                {% endif %}
+                            </label>
+
+                            <div class="control">
+                                <input readonly type="text" class="input" name="title" placeholder="Aqui va tu pregunta"{% if document %} value="{{ document.title }}"{% endif %}>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Respuesta</label>
+
+                            <div class="control">
+                                <textarea readonly class="textarea" name="content" placeholder="Respuesta por CCENT">{% if document %}{{ document.content }}{% endif %}</textarea>
+                            </div>
+                        </div>
+                        <div class="field is-grouped">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+<!-- Footer -->
+<footer id="dk-footer" class="dk-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <div class="dk-footer-box-info">
+                    <a href="/inicio/" class="footer-logo">
+                        <img src="/static/img/ccent.png" alt="footer_logo" class="img-fluid">
+                    </a>
+                    <p class="textoshd footer-info-text">
+                       Formando profesionales desde 2012.
+                    </p>
+                    <div class="footer-social-link">
+                        <h3 class="tituloshd">Siguenos</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/ccent.escuelaelectronica">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.instagram.com/ccent_morelia_nikola_tesla/">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+                <div class="footer-awarad">
+                    <img src="images/icon/best.png" alt="">
+                    <img src="/static/img/" alt="">
+                    <p class="tituloshd">Centro de Capacitacion Electronica Nikola Tesla</p>
+                </div>
+            </div>
+            <!-- End Col -->
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-o" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3 class="tituloshd">Morelia Michoacan</h3>
+                                <p class="textoshd">C. Juan Guillermo Villasana 131, Jardines de Guadalupe, 58140</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="contact-us contact-us-last">
+                            <div class="contact-icon">
+                                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3 class="tituloshd">443 172 2172</h3>
+                                <p class="textoshd">Contactanos</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Contact Row -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <div class="section-heading">
+                                <h3>CCENT</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="/inicio/">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="/cursos/">Cursos</a>
+                                </li>
+                                <li>
+                                    <a href="/servicios/">Servicios</a>
+                                </li>
+                                
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="/materiales/">Materiales</a>
+                                </li>
+                                <li>
+                                    <a href="/faq/">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="/quienes_somos/">¿Quiénes somos?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Widget -->
+                    </div>
+                    <!-- End col -->
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget">
+                            <div class="section-heading">
+                                <h3>Conocenos</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <p class="textoshd">
+                              Somos un centro dedicado a la capacitación técnica para el trabajo en diversas áreas de la electrónica. 
+                              Así mismo, brindamos servicios de consultoría y solución de problemas basándonos en la electrónica.</p>
+                            
+                            <!-- End form -->
+                        </div>
+                        <!-- End footer widget -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Widget Row -->
+    </div>
+    <!-- End Contact Container -->
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <span>Copyright © 2022, All Right Reserved</span>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6">
+                    <div class="copyright-menu">
+                        
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+    </div>
+    <!-- End Copyright -->
+</footer>
+  <!-- Footer -->
+<!-- external js-->
+<script src="/static/js/main.js"></script>
+</body>
+</html>

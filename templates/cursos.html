@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/static/img/Isotipo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link href="/static/css/estilo-inicio.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Combo&family=Lato:wght@300&family=Noto+Sans+Mono:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/static/css/palfooter.css">
+
+<!-- link tipografia titulos -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <!-- link tipografia titulos -->
+  
+  <!-- link tipografia demas textos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <!-- link tipografia demas textos -->
+</head>
+<body class="">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--Header con LOGO-->
+  <div class="b-example-divider"></div>
+  <header class="primerdiv p-3 ">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <a href="/inicio/">
+          <img class="imagen" src="/static/img/ccent.png" alt="CCENT" >
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/inicio/" class="nav-link text-white">Inicio</a></li>
+          <li><a href="/quienes_somos/" class="nav-link text-white">¿Quienes somos?</a></li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cursos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/cursos/">Información</a></li>
+              <li><a class="dropdown-item" href="/av/">Audio y Video</a></li>
+              <li><a class="dropdown-item" href="/autom/">Automotriz</a></li>
+              <li><a class="dropdown-item" href="/EAD/">Electrónica Analógica y Digital</a></li>
+              <li><a class="dropdown-item" href="/pcylap/">PC y Laptops</a></li>
+              <li><a class="dropdown-item" href="/robotica/">Robótica</a></li>
+              
+            <!--<li><a class="dropdown-item" href="#">Something else here</a></li>-->
+            </ul>
+          <li><a href="/materiales/" class="nav-link px-2 text-white">Materiales</a></li>
+          <li><a href="/servicios/" class="nav-link px-2 text-white">Servicios</a></li>
+          <li>
+            <a class="nav-link px-2 text-white" href="/faq/">FAQ</a>
+          </li>
+        </ul>
+
+        {% comment %} BARRA DE BUSQUEDA {% endcomment %}
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Buscar..." aria-label="Search" value="" id="search" onchange="openPage()">
+          <script>
+            function openPage() {
+              var x = document.getElementById("search").value;
+              if (x === "cursos") {
+                  window.open("/cursos/");
+              }
+              if (x === "quienes somos") {
+                  window.open("/quienes_somos/");
+              }
+          if (x === "faq") {
+            window.open("/faq/");
+        }
+        if (x === "automotriz") {
+            window.open("/autom/");
+        }
+            if (x === "audio y video") {
+              window.open("/av/");
+          }
+          if (x === "herramientas") {
+              window.open("/herramientas/");
+          }
+      if (x === "robotica") {
+        window.open("/robotica/");
+    }
+    if (x === "pc y laptops") {
+        window.open("/pcylap/");
+        }
+        if (x === "servicios") {
+          window.open("/servicios/");
+      }
+       if (x === "electronica") {
+        window.open("/EAD/");
+    }
+    if (x === "inicio") {
+      window.open("/inicio/");
+  }
+      }
+        </script>
+        </form>
+
+
+        
+      </div>
+    </div>
+  </header>
+
+<!-- ChatBot-->
+<a href=" https://wa.me/524431722172" class="btn-wsp" target="_blank">
+  <i class="fa fa-whatsapp icono"></i>
+</a>
+
+  <section class=" sec-01">
+    <div class="container">
+      <h2 class="titfaq main-title">Información basica</h2>
+      <div class="content">
+        <div class="image">
+          <img src="/static/img/CCENT.jpg" alt="">
+        </div>
+
+        <div class="text-box">
+            <h4 class="titfaq">Duración</h4>
+            <p class="texfaq question">Todas las areas empiezan en Electrónica Analógica y Digital</p>
+            <li class="texfaq">Se puede cursar solamente 1 módulo (1 Semestre)</li>
+            <li class="texfaq">Cada módulo dura 6 meses</li>
+            <li class="texfaq">Un Área completa consta de 3 módulos (1 año y medio)</li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" sec-02">
+    <div class="container">
+      <div class="content">
+        <div class="image2">
+          <img src="/static/img/horario.jpg" alt="">
+        </div>
+        <div class="info">
+            <h4 class="titfaq">Horarios</h4>
+            <h5 class="titfaq">Lunes a Miercoles</h5>
+            <li class="texfaq">Matutino 8-10 am</li>
+            <li class="texfaq">Vespertino 7-9 pm</li>
+            <h5 class="titfaq">Sabatino</h5>
+            <li class="texfaq">9am-2pm</li>
+            </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class=" sec-02">
+    <div class="container">
+      <div class="content">
+        <div class="image2">
+          <img src="/static/img/CCENTwho3.jpg" alt="">
+        </div>
+        <div class="text-box">
+            <h4 class="titfaq">Inicio de Cursos</h4>
+            <p class="texfaq question">Semana: 1 de agosto 2022</p>
+            <p class="texfaq question">Sabatino 6 de Agosto 2022</p>
+            <h4 class="titfaq">Costos</h4>
+            <h5 class="titfaq">Inscripcion</h5>
+            <li class="texfaq">Regular $500</li>
+            <h5 class="titfaq">Colegiatura Mensual</h5>
+            <li class="texfaq">Pago Regular $1100</li>
+            <li class="texfaq">Pronto Pago $995 </li>
+            <p class="texfaq question">(primeros 5 días del mes)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class=" sec-02">
+    <div class="container">
+      <div class="content1">
+        <div class="text-box1">
+            <h4 class="titfaq">Importantes</h4>
+          <p class="texfaq question">El costo de Colegiatura de los cursos aplica si se toman desde el primer semestre</p>
+          <p class="texfaq question">La apertura de los grupos en cualquiera de los cursos en sus diversos horarios quedan 
+             sujetos a disponibilidad u oferta y demanda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- card -->
+ <section >
+  <h1 class="titfaq Tittle" style="margin-left:3% ;">¡Conoce lo que CCENT tiene para ti!</h1>
+<div style="display: flex; flex-wrap: wrap;">
+<div class="card"  style="width: 18rem;" >
+  <img src="/static/img/Electronica.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="titfaq card-title">Electronica Analogica Digital</h5>
+    <p class="texfaq textoinicio card-text">En este curso aprenderás desde nivel báscio a nivel avanzado en el uso de herramientas, tecnicas de soldadura y más</p>
+    <a href="/EAD/" class="btn btn-warning">Ver curso</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="/static/img/automotriz.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="titfaq card-title">Automotriz</h5>
+    <p class="texfaq textoinicio card-text">Aprende a solucionar fallas en vehiculos</p>
+    <a href="/autom/" class="btn btn-warning">Ver curso</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="/static/img/tvaudio.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="titfaq card-title">Audio y video</h5>
+    <p class="texfaq textoinicio card-text">En este curso aprenderás como dar mantenimiento y reparar equipos de casa, fuentes de alimentacion, tarjetas madre y más</p>
+    <a href="/av/" class="btn btn-warning">Ver curso</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="/static/img/PC.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="titfaq card-title">PC y Laptop</h5>
+    <p class="texfaq textoinicio card-text">En este curso aprenderás a dar soporte y servicio preventivo, además aprenderás a como dar mantenimiento y reparar</p>
+    <a href="/pcylap/" class="btn btn-warning">Ver curso</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="/static/img/robotica.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="titfaq card-title">Robotica</h5>
+    <p class="texfaq textoinicio card-text">En este curso aprenderás a programar circuitos electricos para que realicen funciones</p>
+    <a href="/robotica/" class="btn btn-warning">Ver curso</a>
+  </div>
+</div>
+</div>
+</section>
+<!-- cards -->
+
+<br>
+
+  <!-- Footer -->
+  <footer id="dk-footer" class="dk-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <div class="dk-footer-box-info">
+                    <a href="/inicio/" class="footer-logo">
+                        <img src="/static/img/ccent.png" alt="footer_logo" class="img-fluid">
+                    </a>
+                    <p class="textoshd footer-info-text">
+                       Formando profesionales desde 2012.
+                    </p>
+                    <div class="footer-social-link">
+                        <h3 class="tituloshd">Siguenos</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/ccent.escuelaelectronica">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.instagram.com/ccent_morelia_nikola_tesla/">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+                <div class="footer-awarad">
+                    <img src="images/icon/best.png" alt="">
+                    <img src="/static/img/" alt="">
+                    <p class="tituloshd">Centro de Capacitacion Electronica Nikola Tesla</p>
+                </div>
+            </div>
+            <!-- End Col -->
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-o" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3 class="tituloshd">Morelia Michoacan</h3>
+                                <p class="textoshd">C. Juan Guillermo Villasana 131, Jardines de Guadalupe, 58140</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="contact-us contact-us-last">
+                            <div class="contact-icon">
+                                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3 class="tituloshd">443 172 2172</h3>
+                                <p class="textoshd">Contactanos</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Contact Row -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <div class="section-heading">
+                                <h3>CCENT</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="/inicio/">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="/cursos/">Cursos</a>
+                                </li>
+                                <li>
+                                    <a href="/servicios/">Servicios</a>
+                                </li>
+                                
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="/materiales/">Materiales</a>
+                                </li>
+                                <li>
+                                    <a href="/faq/">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="/quienes_somos/">¿Quiénes somos?</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Widget -->
+                    </div>
+                    <!-- End col -->
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget">
+                            <div class="section-heading">
+                                <h3>Conocenos</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <p class="textoshd">
+                              Somos un centro dedicado a la capacitación técnica para el trabajo en diversas áreas de la electrónica. 
+                              Así mismo, brindamos servicios de consultoría y solución de problemas basándonos en la electrónica.</p>
+                            
+                            <!-- End form -->
+                        </div>
+                        <!-- End footer widget -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Widget Row -->
+    </div>
+    <!-- End Contact Container -->
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <span>Copyright © 2022, All Right Reserved</span>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6">
+                    <div class="copyright-menu">
+                        
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+    </div>
+    <!-- End Copyright -->
+</footer>
+  <!-- Footer -->
+  
+  
+  
+  <script>
+    //common reveal options to create reveal animations
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 1500,
+    delay: 400
+  });
+
+  //Elementos animados SECTOR 1
+  ScrollReveal().reveal('.main-title, .section-title', { delay: 50, origin: 'left' });
+  ScrollReveal().reveal('.sec-01 .image, .info', { delay: 50, origin: 'bottom' });
+  ScrollReveal().reveal('.text-box', { delay: 50, origin: 'right' });
+  ScrollReveal().reveal('.media-icons i', { delay: 50, origin: 'bottom', interval: 200 });
+  //ELEMENTOS ANIMACION SECTOR 2
+  ScrollReveal().reveal('.sec-02 .image2, .sec-03 .image', { delay: 50, origin: 'top' });
+  ScrollReveal().reveal('.media-info li', { delay: 50, origin: 'left', interval: 200 });
+  ScrollReveal().reveal('.main-title, .section-title', { delay: 50, origin: 'left' });
+  // Sector 3
+  ScrollReveal().reveal('.sec-03 .image, .info', { delay: 50, origin: 'bottom' });
+  ScrollReveal().reveal('.text-box', { delay: 50, origin: 'right' });
+  </script>
+</body>
+</html>
